@@ -1,7 +1,7 @@
 {
   "name": "node-api",
   "version": "1.0.0",
-  "description": "AWS CodePipeline + AWS Elastic Beanstack for CI/CD",
+  "description": "Deploy de uma aplicação Node.js usando AWS Elastic Beanstalk",
   "main": "app.js",
   "dependencies": {
     "cors": "^2.8.5",

@@ -11,12 +11,13 @@ app.get("/", (req, res) => {
   res.send("API Works!");
 });
 
-app.get("/github", (req, res) => {
-  res.send("https://github.com/ismaelash/node-api");
+app.get("/social", (req, res) => {
+  res.send(mockData);
 });
 
-app.get("/mock", (req, res) => {
-  res.send(mockData);
+app.get("/social/:id", (req, res) => {
+  var id = req.params.id;
+  res.send(mockData[id]);
 });
 
 app.listen(port, () => {
